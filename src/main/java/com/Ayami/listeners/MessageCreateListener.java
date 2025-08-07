@@ -16,7 +16,6 @@ public void onMessageReceived(MessageReceivedEvent event) {
     String content = event.getMessage().getContentRaw();
     if (!content.startsWith("mw!")) return;
 
-    // Correção aqui
     String[] args = content.substring("mw!".length()).split(" ");
     String commandName = args[0].toLowerCase();
 
