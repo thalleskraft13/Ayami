@@ -1,5 +1,5 @@
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "java -classpath .:target/dependency/* Main"
+run = 'mvn compile exec:java -Dexec.mainClass="com.Ayami.Ayami"'
 entrypoint = "src/main/java/Main.java"
 hidden = ["**/*.class"]
 
